@@ -11,7 +11,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<org.richfaces.bom.version>4.1.0.Final</org.richfaces.bom.version>
+		<org.richfaces.bom.version>4.5.2-SNAPSHOT</org.richfaces.bom.version>
 	</properties>
 
 	<repositories>
@@ -43,21 +43,27 @@
 		</repository>
 	</repositories>
 
-	<!-- RichFaces Bill of Materials -->
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.richfaces</groupId>
-				<artifactId>richfaces-bom</artifactId>
-				<version>${org.richfaces.bom.version}</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-	<!-- End RichFaces BOM -->
+<!-- 	RichFaces Bill of Materials --> 
+<!-- 	<dependencyManagement> -->
+<!-- 		<dependencies> -->
+<!-- 			<dependency> -->
+<!-- 				<groupId>org.richfaces</groupId> -->
+<!-- 				<artifactId>richfaces-bom</artifactId> -->
+<!-- 				<version>${org.richfaces.bom.version}</version> -->
+<!-- 				<scope>import</scope> -->
+<!-- 				<type>pom</type> -->
+<!-- 			</dependency> -->
+<!-- 		</dependencies> -->
+<!-- 	</dependencyManagement> -->
+<!-- 	 End RichFaces BOM -->
 
 	<dependencies>
+		<dependency>
+			<groupId>org.richfaces</groupId>
+    		<artifactId>richfaces</artifactId>
+    		<version>4.5.2-SNAPSHOT</version>
+		</dependency>
+	
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
@@ -73,14 +79,14 @@
 		</dependency>
 
 		<!-- RichFaces stuff -->
-		<dependency>
-			<groupId>org.richfaces.ui</groupId>
-			<artifactId>richfaces-components-ui</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.richfaces.core</groupId>
-			<artifactId>richfaces-core-impl</artifactId>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.richfaces.ui</groupId> -->
+<!-- 			<artifactId>richfaces-components-ui</artifactId> -->
+<!-- 		</dependency> -->
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.richfaces.core</groupId> -->
+<!-- 			<artifactId>richfaces-core-impl</artifactId> -->
+<!-- 		</dependency> -->
 		<!-- end RichFaces stuff -->
 
 	</dependencies>
