@@ -10,21 +10,46 @@
     <h:form>
     
      <h:dataTable value="#{personBean.allPersons}" var="item">
-      <f:facet name="header">#{msg.personAllLabel}</f:facet>
+      <f:facet name="header">#{msg.houseAllLabel}</f:facet>
       
       <h:column>
-        <f:facet name="header">#{msg.personFirstNameLabel}</f:facet>
-        #{item.firstName}
+        <f:facet name="header">#{msg.houseSizeLabel}</f:facet>
+        #{item.size}
       </h:column>
       
       <h:column>
-        <f:facet name="header">#{msg.personPinLabel}</f:facet>
-        #{item.pin}
+        <f:facet name="header">#{msg.houseAddressLabel}</f:facet>
+        #{item.address}
+      </h:column>
+      
+      <h:column>
+        <f:facet name="header">#{msg.houseNrOfDoorsLabel}</f:facet>
+        #{item.nrOfDoors}
+      </h:column>
+      
+      <h:column>
+        <f:facet name="header">#{msg.houseNrOfFloorsLabel}</f:facet>
+        #{item.nrOfFloors}
+      </h:column>
+      
+      <h:column>
+        <f:facet name="header">#{msg.houseColorLabel}</f:facet>
+        #{item.color}
+      </h:column>
+      
+      <h:column>
+        <f:facet name="header">#{msg.houseYocLabel}</f:facet>
+        #{item.yoc}
+      </h:column>
+      
+      <h:column>
+        <f:facet name="header">#{msg.houseImageLabel}</f:facet>
+		<h:graphicImage value="#{item.imageUrl}" />
       </h:column>
       
       <h:column>
         <f:facet name="header">#{msg.action}</f:facet>
-        <h:commandLink value="#{msg.actionDelete}" action="#{personBean.deletePerson}"/>
+        <h:commandLink value="#{msg.actionDelete}" action="#{houseBean.deleteHouse}"/>
       </h:column>
       
      </h:dataTable>
